@@ -4,45 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>EDUCAÇÃO DIGITAL</title>
 
-    <style>
-        header {
-            background-color: rgb(8, 105, 40);
-            color: rgb(10, 48, 5);
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 16px;
-            display: flex;
-            text-align: center;
-            border: 5px solid rgb(34, 197, 34);
-        }
-
-        main {
-            background-color: rgb(240, 238, 214);
-            color: rgb(32, 65, 66);
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 16px;
-
-
-        }
-
-        article {
-            display: flex;
-        }
-
-
-        img {
-            width: 210px;
-            height: 210px;
-        }
-
-        .autor {
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
@@ -94,28 +58,15 @@
                 <button>❌​​​<spam>0</spam></button>
             </div>
         </article>
+
+
+
     </main>
+
+    <script>src = "script.js"</script>
+
 </body>
 
-<script>
-    const botoes = document.querySelectorAll("button");
 
-    botoes.forEach(function (botao) {
-        let curtiu = false;
-        botao.addEventListener("click", botaoClicado);
-        function botaoClicado() {
-            console.log("fui clicado");
-            let texto = botao.querySelector("span");
-            if (curtiu === false) {
-                texto.textContent++;
-                curtiu = true;
-            } else {
-                texto.textContent--;
-                curtiu = false;
-            }
-
-        }
-    })
-</script>
 
 </html>
